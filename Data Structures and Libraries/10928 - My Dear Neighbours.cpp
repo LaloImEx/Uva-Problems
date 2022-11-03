@@ -2,22 +2,6 @@
 using namespace std;
 string linea; 
 
-int espacios(string s)
-{
-    int count = 1;
-
-    for(int as = 0; as < s.length(); as++)
-    {
-        if(s[as] == ' ')
-        {
-            count++;
-        }
-    }
-
-    return count;
-    
-}
-
 int main()
 {
     int t, np, c = 0, x = 0, last= 0;
@@ -72,4 +56,19 @@ int main()
         cout<<linea<<"\n";
         
     }
+}
+
+int espacios(string s)
+{
+    int count = 1;
+
+    for(int as = 0; as < s.length(); as++)
+    {
+        if(s[as] == ' ')
+        {
+            count++;
+        }
+    }
+
+    return count;
 }
