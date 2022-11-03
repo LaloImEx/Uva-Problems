@@ -5,8 +5,7 @@ int main()
 {
     int N, R, LIM=0, C=0, OP = 1, C2;
                                 
-    cin>>N;
-    cin>>R;
+    cin>>N; cin>>R;
   
     while(N > 0||R>>0)
     {
@@ -16,8 +15,7 @@ int main()
       
             else{
                     C = N/R;
-                    C2 = N%R;
-              
+                    C2 = N%R;              
                     if(C2==0)
                     {
                         C = C-1;
@@ -30,8 +28,7 @@ int main()
                     }
                 } 
 
-            cin>>N;
-            cin>>R;
+            cin>>N; cin>>R;           
     }
 
 }
