@@ -5,26 +5,20 @@ string linea;
 int main()
 {
     int t, np, c = 0, x = 0, last= 0;
- 
     cin>>t;
 
     for(int ss = 0; ss<t; ss++)
     {
         cin>>np;
         int ar[np+1];
-        
+       
         while(x < np+1)
         {
             getline(cin, linea);        
             last = espacios(linea);
     
-            if(last > 0)
-            {
-                ar[x] = last;
-            }
+            if(last > 0){ ar[x] = last }
             x++;
-            
-            linea = "";        
         }
         
         x = 1;
@@ -53,8 +47,7 @@ int main()
         x = 0;
 
         linea.erase(linea.length()-1);
-        cout<<linea<<"\n";
-        
+        cout<<linea<<"\n";   
     }
 }
 
